@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <title>Game Console</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="console">
+        <div class="dpad">
+            <button class="dpadbutton up"></button>
+            <button class="dpadbutton down"></button>
+            <button class="dpadbutton right"></button>
+            <button class="dpadbutton left"></button>
+            <button class="dpadbutton center"></button>
+        </div>
+        
+        <div class="screen" id="screen">
+            <div class="overlay" id="overlay">
+                <p class="loading-text" id="overlaytext"></p>
+            </div>
+
+            <div class="errorb" id="errorb" aria-live="polite"></div>
+            <img src="images/background.png" alt="background" class="background">
+
+            <div class="boat" id="boat" data-slide="right">
+                <img src="images/boat.png" alt="boat" class="boatimg">
+                <div class="boatseat" id="seat1" ></div>
+                <div class="boatseat" id="seat2"></div>
+
+            </div>
+
+            <div class="rightbank" id="rightbank">
+                <img src="images/missionary.png" alt="mission" class="missionary" id="m1" data-type="M" data-side="right">
+                <img src="images/missionary.png" alt="mission" class="missionary" id="m2" data-type="M" data-side="right">
+                <img src="images/missionary.png" alt="mission" class="missionary" id="m3" data-type="M" data-side="right">
+
+                <img src="images/cannibal.png" alt="cannibal" class="cannibal" id="c1" data-type="C" data-side="right">
+                <img src="images/cannibal.png" alt="cannibal" class="cannibal" id="c2" data-type="C" data-side="right">
+                <img src="images/cannibal.png" alt="cannibal" class="cannibal" id="c3" data-type="C" data-side="right">
+            </div>
+
+            <div class="leftbank" id="leftbank"></div>
+            <div class="boatpassenger" id="boatpassenger"></div>
+            
+            <button class="gobutton" id="gobutton">Go</button>
+            <div class="rules" id="rules">
+                  <p>Please help the 3 cannibals and the 3 missionaries</p>
+                  <p>to move to the other side of the lakes.</p>
+                  <p>notice that: when there is on one side more cannibals than</p>
+                  <p>missionaries, they eat them.</p>
+            </div>
+            <button class="togglerules" id="togglerules">?</button>
+        </div>
+
+        <div class="controls">
+            <button class="startstop" id="start">Start</button>
+            <button class="restart" id="restart">Restart</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
